@@ -8,5 +8,11 @@
 3. เอา token มาใส่ในโค้ดที่มีคำว่า //token
 4. ทำการทดสอบ แล้วนำไปออกแบบเพิ่มเติม
 
+# กรณีที่ดึงข้อมูลไม่ได้ให้ดาวโหลดไฟล์ที่ https://curl.se/docs/caextract.html ชื่อไฟล์ cacert.pem เอาไปใส่ต่อจากtoken
+เช่น CURLOPT_HTTPHEADER => array(
+    "x-access-token: coinranking954a3a39af06dcaa1f11662f2f985b06ea1933d98d63a857"
+    ),
+    CURLOPT_CAINFO => 'cacert.pem', //ที่เก็บไฟล์ที่ใหนส่วนผมเก็บไว้ในที่เดียวกัน
+
 
 # สามารถดูเพิ่มเติมเกี่ยวกับโค้ดได้[ที่นี่](https://developers.coinranking.com/api/documentation)?
